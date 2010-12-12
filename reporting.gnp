@@ -1,0 +1,12 @@
+#!/usr/bin/gnuplot
+
+set terminal svg enhanced size 3000 700 fname "Times" fsize 12
+
+set title "Prime Density" 
+set ylabel "primenumber"
+set xlabel "index"
+
+set grid
+
+set output "primes.svg"
+plot "primes.out" using 1 title 'jvm1' with lines lc rgb "red"
